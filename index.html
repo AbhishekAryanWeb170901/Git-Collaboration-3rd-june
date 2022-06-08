@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #con{
+        width: 100%;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 400px;
+        gap: 20px;
+        grid-template-areas: 
+        "a a"
+        "c d"
+    }
+    #con > div:nth-child(1){
+        background-color: yellow;
+        grid-area: a;
+        font-size: 30PX;
+        /* height: 100px; */
+        
+        
+    }
+    
+    #con > div:nth-child(1){
+        background-color: yellow;
+        grid-area: a;
+        font-size: 50PX;
+        /* height: 100px; */
+        
+        
+    }
+    #con > div:nth-child(2){
+        background-color: yellow;
+        grid-area: b;
+        /* height: 100px; */
+    }
+    #con > div:nth-child(3){
+        background-color: red;
+        grid-area: c;
+        font-size: 30PX;
+    }
+    #con > div:nth-child(4){
+        background-color: lime;
+        grid-area: d;
+        font-size: 30PX;
+    }
+    @media all and (min-width:280px) and (max-width:720px){
+        #con{
+        width: 100%;
+        padding: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 100px 300px 300px;
+        gap: 20px;
+        grid-template-areas: 
+        "a a"
+        "c c"
+        "d d" 
+    }
+    #con > div:nth-child(1){
+        background-color: yellow;
+        grid-area: a;
+        font-size: 38PX;
+        /* height: 100px; */
+        
+        
+    }
+    
+    }
+    </style>
+</head>
+<body>
+    <div id="con">
+        <div>NEVIGATION</div>
+        <div></div>
+        <div>LEFT BOX</div>
+        <div>RIGHT BOX</div>
+    </div>
+</body>
+</html>
